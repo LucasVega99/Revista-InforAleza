@@ -1,0 +1,87 @@
+/* Index */
+
+.tit-categoria-container {
+    background-color: #ffe7e7;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-family: $fuenteBebasNeue;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+}
+
+.articulos-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+    }
+    .card-nota {
+        padding: 10px;
+        margin: 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: -1;
+        }
+        a {
+            text-decoration: none;
+        }
+        .descripcion-card {
+            font-family: $fuenteBebasNeue;
+            color: $blancoCrema;
+            margin: 12rem 0;
+            text-align: center;
+            h3 {
+                font-size: 2.5rem;
+                @media (min-width: 1200px) {
+                    font-size: 2rem;
+                }
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .card-nota1 {
+        background-image: url('../imgs/Energía-eólica/portada-eolica.jpeg');
+        color: white;
+    }
+    .card-nota2 {
+        background-image: url('../imgs/Agroecología/Agroecologia-portada.jpg');
+    }
+    .card-nota3 {
+        background-image: url('../imgs/Plástico-o-vida/tortuga-atrapada-en-una-red_b00e1d7c.jpg');
+    }
+    .card-nota4 {
+        background-image: url('../imgs/Protestas-ambientales/pexels-vincent-ma-janssen-2561628.jpg');
+    }
+    .card-nota5 {
+        background-image: url('../imgs/Empresas-contaminantes/Industrias_mas_contaminantes.jpg');
+    }
+    .card-nota6 {
+        background-image: url('../imgs/Incendios-forestales/incendio-portada.jpg');
+    }
+}

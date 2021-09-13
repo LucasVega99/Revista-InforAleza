@@ -1,6 +1,6 @@
 
 .footer {
-    background-color:$negroMate;
+    background-color: $negroMate;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -9,86 +9,78 @@
     flex-wrap: wrap;
     height: 40rem;
     width: 100%;
-    .titulo-footer {
-        font-size: 2rem;
-        text-align: center;
-        font-family: $fuenteBebasNeue;
-    }
-
-
-
-
-
-
-
-
     @media (min-width: 992px) {
         height: 20rem;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     };
+    .titulo-footer {
+        font-size: 2rem;
+        text-align: center;
+        font-family: $fuenteBebasNeue;
+    };
+    /* Newsletter */
+    .newsletter {
+        .newsletter-flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .titulo-newsletter {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                width: 200px;
+            };
+        };
+        div {
+            svg {
+                width: 100px;
+                margin-left: 1rem;
+            };
+        };
+        p {
+            font-size: 1rem;
+            text-align: center;
+        };
+        input {
+            border-radius: 3px;
+            outline: none;
+            width: 100%;
+            border: none;
+            height: 2rem;
+            margin: 0 auto;
+        };
+    };
+    /* Revistas amigas */
+    .revistas-amigas {
+        margin-top: 2rem;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: $blancoCrema;
+                margin: 0.3rem 0;
+                transition: all 0.5s ease;
+                width: 12rem;
+                text-align: center;
+                border-radius: 5%;
+                border: none;
+                font-size: 1.3rem;
+                &:hover {
+                    background-color: $blancoCrema;
+                    color: $negroMate;
+                };
+            };
+        };
+    };
+    /* Redes Sociales */
+    .iconos-redes-container {
+        display: flex;
+        justify-content: space-around;
+        width: 15rem;
+    }
 };
-
-/* Newsletter */
-
-.newsletter-flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-}
-.titulo-newsletter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 200px;
-}
-
-.newsletter div svg {
-    width: 100px;
-    margin-left: 1rem;
-}
-.newsletter p {
-    font-size: 1rem;
-    text-align: center;
-}
-.newsletter input {
-    border-radius: 3px;
-    outline: none;
-    width: 100%;
-    border: none;
-    height: 2rem;
-    margin: 0 auto;
-}
-/* Revistas amigas */
-.revistas-amigas {
-    margin-top: 2rem;
-}
-.revistas-amigas div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.revistas-amigas div a {
-    text-decoration: none;
-    color: var(--blancoCrema);
-    margin: 0.3rem 0;
-    transition: all 0.5s ease;
-    width: 12rem;
-    text-align: center;
-    border-radius: 5%;
-    border: none;
-    font-size: 1.3rem;
-} 
-.revistas-amigas div a:hover {
-    background-color: var(--blancoCrema);
-    color: var(--negroMate);
-}
-/* Redes Sociales */
-.iconos-redes-container {
-    display: flex;
-    justify-content: space-around;
-    width: 15rem;
-}
-/* Fin Footer */

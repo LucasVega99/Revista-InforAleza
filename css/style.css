@@ -82,7 +82,6 @@ body {
   /* logo InforAleza */
   /* secciones (inicio - nosotres) */
   /* barra de busqueda */
-  /* carousel */
 }
 .nav-container .logo {
   font-family: "Bebas Neue";
@@ -179,14 +178,12 @@ body {
   cursor: pointer;
   color: #2f6a01;
 }
-.nav-container .carousel-inicio {
-  height: 100%;
-  width: 100%;
-}
-.nav-container .carousel-inicio a {
+
+/* carousel */
+a {
   text-decoration: none;
 }
-.nav-container .carousel-inicio .titulo-carousel {
+a .titulo-carousel {
   color: ghostwhite;
   font-weight: bold;
   font-size: 4.5rem;

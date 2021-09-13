@@ -142,18 +142,15 @@
                     };
                 };
         };
-        /* carousel */ 
-        .carousel-inicio {
-            height: 100%;
-            width: 100%;
-            a {
-                text-decoration: none;
-            };
-            .titulo-carousel {
-                color: $blancoCrema;
-                font-weight: bold;
-                font-size: 4.5rem;
-                font-family: $fuenteBebasNeue;
-            };
-        };
+};
+
+/* carousel */ 
+a{
+    text-decoration: none;
+    .titulo-carousel {
+        color: $blancoCrema;
+        font-weight: bold;
+        font-size: 4.5rem;
+        font-family: $fuenteBebasNeue;
+    };
 };

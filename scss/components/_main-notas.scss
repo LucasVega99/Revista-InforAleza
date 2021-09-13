@@ -1,0 +1,86 @@
+/* Articulos */
+.titulo-nota {
+    text-align: center;
+    color: $negroMate;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: $fuenteBebasNeue;
+    margin-top: 4rem;
+}
+.nota-container {
+    margin: 30px auto;
+    width: 80%;
+}
+@media (min-width: 992px) {
+    .nota-container {
+        width: 50%;
+    }
+}
+.parrafo {
+    letter-spacing: .3px;
+    word-spacing: 1px;
+    margin: 30px auto;
+    text-align: justify;
+}
+@media (min-width: 600px) {
+    .parrafo {
+        font-size: 1rem;
+    }
+}
+.subtitulo {
+    text-align: center;
+    font-family: $fuenteBebasNeue;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.video-youtube {
+    display: block;
+    width: 90%;
+    height: 15rem;
+    margin: 0 auto;
+}
+@media (min-width: 600px) {
+    .video-youtube {
+        height: 40rem;
+    }
+}
+.img-nota {
+    width: 100%;
+    height: auto;
+}
+
+.img-descripcion {
+    font-size: 0.8rem;
+    margin-left: 10px;
+} 
+.titulo-recomendadas {
+    margin-top: 1rem;
+    font-family: $fuenteBebasNeue;
+    font-size: 3rem;
+}
+.notas-recomendadas-container {
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    .notas-recomendadas-container{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+}
+
+.card-recomendada {
+    width: 20rem;
+    margin: 1rem 2rem;
+    height: 26rem;
+}
+.card-recomendada a {
+    text-decoration: none;
+    color: $negroMate;
+}

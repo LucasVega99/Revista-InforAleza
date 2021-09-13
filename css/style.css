@@ -379,84 +379,112 @@ a .titulo-carousel {
   margin: 30px auto;
   width: 80%;
 }
-
 @media (min-width: 992px) {
   .nota-container {
-    width: 50%;
+    width: 55%;
   }
 }
-.parrafo {
+.nota-container .parrafo {
   letter-spacing: 0.3px;
   word-spacing: 1px;
   margin: 30px auto;
   text-align: justify;
 }
-
 @media (min-width: 600px) {
-  .parrafo {
+  .nota-container .parrafo {
     font-size: 1rem;
   }
 }
-.subtitulo {
+.nota-container .subtitulo {
   text-align: center;
   font-family: "Bebas Neue";
   font-weight: bold;
   font-size: 35px;
 }
-
-.video-youtube {
+.nota-container .video-youtube {
   display: block;
   width: 90%;
-  height: 15rem;
+  height: 20rem;
   margin: 0 auto;
 }
-
-@media (min-width: 600px) {
-  .video-youtube {
+@media (min-width: 768px) {
+  .nota-container .video-youtube {
     height: 40rem;
   }
 }
-.img-nota {
+.nota-container .img-nota {
   width: 100%;
   height: auto;
 }
-
-.img-descripcion {
+.nota-container .img-descripcion {
   font-size: 0.8rem;
   margin-left: 10px;
 }
 
 .titulo-recomendadas {
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-family: "Bebas Neue";
   font-size: 3rem;
 }
 
 .notas-recomendadas-container {
   display: grid;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   text-align: center;
-  justify-items: center;
-  align-items: center;
+  margin: 0 auto;
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .notas-recomendadas-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    width: 80%;
   }
 }
-.card-recomendada {
+.notas-recomendadas-container .card-recomendada {
   width: 20rem;
   margin: 1rem 2rem;
-  height: 26rem;
+  height: 28rem;
 }
-
-.card-recomendada a {
+.notas-recomendadas-container .card-recomendada a {
   text-decoration: none;
   color: #151819;
+}
+
+.nosotres {
+  margin-top: 2rem;
+}
+.nosotres h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.nosotres .nosotres-cards-container {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .nosotres .nosotres-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.nosotres .staff-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nosotres .staff-card img {
+  border-radius: 50%;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+.nosotres .staff-card h3 {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

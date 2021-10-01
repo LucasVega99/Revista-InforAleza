@@ -3,9 +3,12 @@
     text-align: center;
     color: $negroMate;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: $fuenteBebasNeue;
     margin-top: 4rem;
+    @media (min-width: 550px) {
+        font-size: 4rem;
+    }
 }
 .nota-container {
     margin: 30px auto;
@@ -42,11 +45,17 @@
         height: auto;
     }
     .autores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #e2e7ee;
+        border-radius: 5px;
         .autor-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-top: 10px;
             img {
                 border-radius: 50%;
                 text-align: center;
@@ -55,6 +64,14 @@
             }
             h3 {
                 font-size: 1.5rem;
+            }
+        }
+        div {
+            p {
+                margin-left: 15px;
+                a {
+                    text-decoration: none;
+                }
             }
         }
     }

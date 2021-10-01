@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   background-size: 100%;
-  height: 1200px;
+  height: 1000px;
 }
 
 .header-nota1-bg,
@@ -41,7 +41,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  height: 1000px;
   width: 100%;
 }
 
@@ -180,14 +180,56 @@ body {
 }
 
 /* carousel */
-a {
-  text-decoration: none;
+.carousel {
+  width: 100%;
+  height: 800px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-a .titulo-carousel {
-  color: ghostwhite;
-  font-weight: bold;
-  font-size: 4.5rem;
-  font-family: "Bebas Neue";
+.carousel .slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.carousel .slides input {
+  display: none;
+}
+.carousel .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+.carousel .slides #radio2:checked ~ .first {
+  margin-left: -20%;
+}
+.carousel .slides #radio3:checked ~ .first {
+  margin-left: -40%;
+}
+.carousel .slides .imagen-carousel {
+  width: 20%;
+  transition: 2s;
+}
+.carousel .slides .imagen-carousel img {
+  width: 100%;
+  height: 800px;
+}
+.carousel .slides .nav-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.carousel .slides .nav-manual .manual-btn {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.carousel .slides .nav-manual .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.carousel .slides .nav-manual .manual-btn:hover {
+  background: #40d3dc;
 }
 
 .footer {
@@ -274,7 +316,7 @@ a .titulo-carousel {
   width: 15rem;
 }
 
-/* Index */
+/* Título secciones de cards */
 .tit-categoria-container {
   background-color: #ffe7e7;
   width: 100%;
@@ -290,6 +332,7 @@ a .titulo-carousel {
   margin-top: 0.8rem;
 }
 
+/* Cards direccionando a las notas */
 .articulos-flex-container {
   display: flex;
   justify-content: space-evenly;
@@ -370,9 +413,14 @@ a .titulo-carousel {
   text-align: center;
   color: #151819;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Bebas Neue";
   margin-top: 4rem;
+}
+@media (min-width: 550px) {
+  .titulo-nota {
+    font-size: 4rem;
+  }
 }
 
 .nota-container {
@@ -416,9 +464,34 @@ a .titulo-carousel {
   width: 100%;
   height: auto;
 }
-.nota-container .img-descripcion {
-  font-size: 0.8rem;
-  margin-left: 10px;
+.nota-container .autores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e2e7ee;
+  border-radius: 5px;
+}
+.nota-container .autores .autor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.nota-container .autores .autor-card img {
+  border-radius: 50%;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+}
+.nota-container .autores .autor-card h3 {
+  font-size: 1.5rem;
+}
+.nota-container .autores div p {
+  margin-left: 15px;
+}
+.nota-container .autores div p a {
+  text-decoration: none;
 }
 
 .titulo-recomendadas {

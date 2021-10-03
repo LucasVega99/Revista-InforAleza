@@ -509,6 +509,7 @@ body {
 .nosotres h1 {
   font-size: 4rem;
   text-align: center;
+  font-family: "Bebas Neue";
 }
 .nosotres .nosotres-cards-container {
   margin: 3rem auto;
@@ -535,7 +536,22 @@ body {
   width: 150px;
 }
 .nosotres .staff-card h3 {
+  margin-top: 10px;
   font-size: 1.5rem;
+  font-family: "Bebas Neue";
+}
+
+.titulo-nosotres {
+  font-family: "Bebas Neue";
+}
+
+.parrafo-nos-container {
+  margin: 0 auto;
+  width: 80%;
+}
+.parrafo-nos-container .parrafo-nos {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

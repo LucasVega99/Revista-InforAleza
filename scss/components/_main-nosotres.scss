@@ -3,6 +3,7 @@
     h1 {
         font-size: 4rem;
         text-align: center;
+        font-family: $fuenteBebasNeue;
     }
     .nosotres-cards-container {
         margin: 3rem auto;
@@ -26,7 +27,20 @@
             width: 150px;
         }
         h3 {
+            margin-top: 10px;
             font-size: 1.5rem;
+            font-family: $fuenteBebasNeue;
         }
+    }
+}
+.titulo-nosotres {
+    font-family: $fuenteBebasNeue;
+}
+.parrafo-nos-container {
+    margin: 0 auto;
+    width: 80%;
+    .parrafo-nos {
+        font-size: 1.2rem;
+        text-align: center;
     }
 }

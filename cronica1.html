@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <!-- SEO stuff -->
+    <meta name="description" content="En un encuentro realizado durante la jornada de ayer, la Cámara Eólica Argentina (CEA), repasó algunos de los pilares fundamentales de la industria, tanto en la actualidad como de cara al futuro cercano. El rol del sector en la agenda por el cambio climático, las dificultades de las empresas para acceder a financiamiento y la generación de divisas fueron algunos de los tópicos abordados durante cuatro paneles.">
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -33,7 +35,9 @@
     </header>
     <main>
         <!-- Cuerpo de la nota -->
-        <h1 class="titulo-nota">Energía eólica: los desafíos de la industria y la disputa ambiental</h1>
+        <div class="titulo-container">
+            <h1 class="titulo-nota">Energía eólica: los desafíos de la industria y la disputa ambiental</h1>
+        </div>
         <article class="nota-container">
             <h2 class="subtitulo">Su rol para ahorrar divisas y las necesidades del sector</h2>
             <p class="parrafo">
@@ -66,6 +70,7 @@
                 En el largo plazo, creo que hay algunos ejemplos inteligentes de como la administración actual 
                 reconoce cuales son los actores que permiten el crecimiento de las renovables”, señaló el directivo de Genneia.
             </p>
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/FFkalikWxX8" title="Energía eólica marina: camino a una Europa descarbonizada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="parrafo"> 
                 En ese sentido, el presidente de la CEA René Vaca Guzmán hizo especial foco 
                 en los desafíos que tiene el sector en el presente. 
@@ -88,9 +93,6 @@
                 cómo crecemos si el financiamiento en Argentina está trabado. Es una tarea, en ambos casos, 
                 que debemos hacer tanto en el sector privado como el sector público”.
             </p>
-            <div class="iframe-container">
-                <iframe class="video-youtube" src="https://www.youtube.com/embed/FFkalikWxX8" title="Energía eólica marina: camino a una Europa descarbonizada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             <h2 class="subtitulo">Cambio climático como eje</h2>
             <p class="parrafo">
                 Otro de los tópicos abordados durante el encuentro fue la agenda por el cambio climático, 
@@ -124,8 +126,9 @@
             </section>
         </article>
         <!-- Notas recomendadas -->
+        <section class="seccion-recomendadas">
         <h2 class="text-center titulo-recomendadas">Notas que podrían interesarte</h2>
-            <section class="notas-recomendadas-container">
+            <div class="notas-recomendadas-container">
                 <div class="card card-recomendada">
                     <a href="cronica2.html">
                         <img src="imgs/agroecologia/agroecologia-portada.jpg" class="card-img-top" alt="card-nota-recomendada-cronica-2">
@@ -153,7 +156,8 @@
                         </div>
                     </a>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
     <!-- Pie de página -->
     <footer class="footer">
